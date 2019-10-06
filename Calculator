@@ -1,0 +1,22 @@
+print(“School Expenses:”,  school_expenses = input(), end=())
+print(school_expenses)
+
+print(“Living Expenses:”, living_expenses = input(), end=())
+print(living_expenses)
+
+print("Food Expenses:", food_expenses = input(), end=())
+print(food_expenses)
+
+print("Entertainment Expenses:", entertainment_expenses = input(), end=())
+print(entertainment_expenses)
+
+print("Clothing Expenses:", clothing_expenses = input(), end=())
+print(clothing_expenses)
+
+print("Transportation Expenses:", transportation_expenses = input(), end=())
+print(transportation_expenses)
+
+print(Miscellaneous Expenses:", miscellaneous_expenses = input(), end=())
+print(miscellaneous_expenses)
+
+print(“This school year you’ve spent a total of $”)
