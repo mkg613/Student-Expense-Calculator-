@@ -1,3 +1,4 @@
+print("Please input your total yearly expenses for each respective catagory."  #prompting user for inputs
 print(“School Expenses:”,  school_expenses = input(), end=())
 print(school_expenses)
 
@@ -19,4 +20,6 @@ print(transportation_expenses)
 print(Miscellaneous Expenses:", miscellaneous_expenses = input(), end=())
 print(miscellaneous_expenses)
 
-print(“This school year you’ve spent a total of $”)
+yearly_expenses = school_expenses + living_expenses + food_expenses + entertainment_expenses + clothing_expenses + transportation_expenses + miscellaneous_expenses   #calculating yearly expenses using user's inputs 
+
+print(“This school year you’ve spent a total of $”, yearly_expenses) #printing total yearly expenses
