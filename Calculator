@@ -1,25 +1,14 @@
-print("Please input your total yearly expenses for each respective catagory."  #prompting user for inputs
-print(“School Expenses:”,  school_expenses = input(), end=())
-print(school_expenses)
+def obatain_input() -> int: 
+    print("Please input your total yearly expenses for each respective catagory.")  #prompting user for inputs in each catagory
+    school_expenses = float(input(“School Expenses:”))
+    living_expenses = float(input(“Living Expenses:”))
+    food_expenses = float(input("Food Expenses:"))
+    entertainment_expenses = float(input("Entertainment Expenses:"))
+    clothing_expenses = float(input("Clothing Expenses:"))
+    transportation_expenses = float(input("Transportation Expenses:"))
+    miscellaneous_expenses = float(input(Miscellaneous Expenses:"))
+    return school_expenses + living_expenses + food_expenses + entertainment_expenses + clothing_expenses + transportation_expenses + miscellaneous_expenses   #calculating yearly expenses using user's inputs 
 
-print(“Living Expenses:”, living_expenses = input(), end=())
-print(living_expenses)
-
-print("Food Expenses:", food_expenses = input(), end=())
-print(food_expenses)
-
-print("Entertainment Expenses:", entertainment_expenses = input(), end=())
-print(entertainment_expenses)
-
-print("Clothing Expenses:", clothing_expenses = input(), end=())
-print(clothing_expenses)
-
-print("Transportation Expenses:", transportation_expenses = input(), end=())
-print(transportation_expenses)
-
-print(Miscellaneous Expenses:", miscellaneous_expenses = input(), end=())
-print(miscellaneous_expenses)
-
-yearly_expenses = school_expenses + living_expenses + food_expenses + entertainment_expenses + clothing_expenses + transportation_expenses + miscellaneous_expenses   #calculating yearly expenses using user's inputs 
-
-print(“This school year you’ve spent a total of $”, yearly_expenses) #printing total yearly expenses
+if __name__ == "__main__":
+  yearly_expenses = obatain_input()
+  print(“This school year you’ve spent a total of $” + str(yearly_expenses)) #printing total yearly expenses
